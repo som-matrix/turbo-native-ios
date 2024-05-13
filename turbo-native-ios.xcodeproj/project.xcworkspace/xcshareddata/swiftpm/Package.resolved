@@ -1,0 +1,15 @@
+{
+  "originHash" : "be3c5ac7a6e05b7b6950f38669ab2e66fabd38d14c898325c8e88dd5619d2470",
+  "pins" : [
+    {
+      "identity" : "turbo-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hotwired/turbo-ios/",
+      "state" : {
+        "revision" : "90227d6a3d090ee4eaacfddca3ef4cc433380f2d",
+        "version" : "7.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
