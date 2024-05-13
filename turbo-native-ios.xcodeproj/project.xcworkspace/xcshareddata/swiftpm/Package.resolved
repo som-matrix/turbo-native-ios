@@ -1,6 +1,15 @@
 {
-  "originHash" : "be3c5ac7a6e05b7b6950f38669ab2e66fabd38d14c898325c8e88dd5619d2470",
+  "originHash" : "9d302e37375a90f1d9d2a2abef43c8b73be92ef3332596c0b339dd038cf770a3",
   "pins" : [
+    {
+      "identity" : "strada-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hotwired/strada-ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a44a86d4bab98d29cbba31446ee4834670613119"
+      }
+    },
     {
       "identity" : "turbo-ios",
       "kind" : "remoteSourceControl",
