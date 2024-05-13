@@ -14,6 +14,11 @@
 		4A7D9A362BF1FED40034B15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D9A352BF1FED40034B15B /* Assets.xcassets */; };
 		4A7D9A392BF1FED40034B15B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D9A382BF1FED40034B15B /* Base */; };
 		4A7D9A422BF1FEEB0034B15B /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 4A7D9A412BF1FEEB0034B15B /* Turbo */; };
+		4A7D9A452BF220570034B15B /* Strada in Frameworks */ = {isa = PBXBuildFile; productRef = 4A7D9A442BF220570034B15B /* Strada */; };
+		4A7D9A482BF2217F0034B15B /* BridgeComponent+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D9A472BF2217F0034B15B /* BridgeComponent+App.swift */; };
+		4A7D9A4D2BF2228A0034B15B /* WKWebViewConfiguration+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D9A4C2BF2228A0034B15B /* WKWebViewConfiguration+App.swift */; };
+		4A7D9A4F2BF224C30034B15B /* SceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D9A4E2BF224C30034B15B /* SceneController.swift */; };
+		4A7D9A512BF2275A0034B15B /* TurboWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D9A502BF2275A0034B15B /* TurboWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,10 @@
 		4A7D9A352BF1FED40034B15B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7D9A382BF1FED40034B15B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7D9A3A2BF1FED40034B15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7D9A472BF2217F0034B15B /* BridgeComponent+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BridgeComponent+App.swift"; sourceTree = "<group>"; };
+		4A7D9A4C2BF2228A0034B15B /* WKWebViewConfiguration+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebViewConfiguration+App.swift"; sourceTree = "<group>"; };
+		4A7D9A4E2BF224C30034B15B /* SceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneController.swift; sourceTree = "<group>"; };
+		4A7D9A502BF2275A0034B15B /* TurboWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7D9A422BF1FEEB0034B15B /* Turbo in Frameworks */,
+				4A7D9A452BF220570034B15B /* Strada in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +68,8 @@
 		4A7D9A2B2BF1FED30034B15B /* turbo-native-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4A7D9A4B2BF222700034B15B /* Web */,
+				4A7D9A462BF221190034B15B /* Strada */,
 				4A7D9A2C2BF1FED30034B15B /* AppDelegate.swift */,
 				4A7D9A2E2BF1FED30034B15B /* SceneDelegate.swift */,
 				4A7D9A302BF1FED30034B15B /* ViewController.swift */,
@@ -65,8 +77,26 @@
 				4A7D9A352BF1FED40034B15B /* Assets.xcassets */,
 				4A7D9A372BF1FED40034B15B /* LaunchScreen.storyboard */,
 				4A7D9A3A2BF1FED40034B15B /* Info.plist */,
+				4A7D9A4E2BF224C30034B15B /* SceneController.swift */,
+				4A7D9A502BF2275A0034B15B /* TurboWebViewController.swift */,
 			);
 			path = "turbo-native-ios";
+			sourceTree = "<group>";
+		};
+		4A7D9A462BF221190034B15B /* Strada */ = {
+			isa = PBXGroup;
+			children = (
+				4A7D9A472BF2217F0034B15B /* BridgeComponent+App.swift */,
+			);
+			path = Strada;
+			sourceTree = "<group>";
+		};
+		4A7D9A4B2BF222700034B15B /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				4A7D9A4C2BF2228A0034B15B /* WKWebViewConfiguration+App.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,7 @@
 			name = "turbo-native-ios";
 			packageProductDependencies = (
 				4A7D9A412BF1FEEB0034B15B /* Turbo */,
+				4A7D9A442BF220570034B15B /* Strada */,
 			);
 			productName = "turbo-native-ios";
 			productReference = 4A7D9A292BF1FED30034B15B /* turbo-native-ios.app */;
@@ -118,6 +149,7 @@
 			mainGroup = 4A7D9A202BF1FED30034B15B;
 			packageReferences = (
 				4A7D9A402BF1FEEB0034B15B /* XCRemoteSwiftPackageReference "turbo-ios" */,
+				4A7D9A432BF220570034B15B /* XCRemoteSwiftPackageReference "strada-ios" */,
 			);
 			productRefGroup = 4A7D9A2A2BF1FED30034B15B /* Products */;
 			projectDirPath = "";
@@ -146,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7D9A482BF2217F0034B15B /* BridgeComponent+App.swift in Sources */,
 				4A7D9A312BF1FED30034B15B /* ViewController.swift in Sources */,
+				4A7D9A4F2BF224C30034B15B /* SceneController.swift in Sources */,
+				4A7D9A512BF2275A0034B15B /* TurboWebViewController.swift in Sources */,
 				4A7D9A2D2BF1FED30034B15B /* AppDelegate.swift in Sources */,
 				4A7D9A2F2BF1FED30034B15B /* SceneDelegate.swift in Sources */,
+				4A7D9A4D2BF2228A0034B15B /* WKWebViewConfiguration+App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +415,14 @@
 				minimumVersion = 7.1.0;
 			};
 		};
+		4A7D9A432BF220570034B15B /* XCRemoteSwiftPackageReference "strada-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/strada-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -386,6 +430,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4A7D9A402BF1FEEB0034B15B /* XCRemoteSwiftPackageReference "turbo-ios" */;
 			productName = Turbo;
+		};
+		4A7D9A442BF220570034B15B /* Strada */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A7D9A432BF220570034B15B /* XCRemoteSwiftPackageReference "strada-ios" */;
+			productName = Strada;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
